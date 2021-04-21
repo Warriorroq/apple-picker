@@ -58,3 +58,193 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+
+New Unity Project/Assets/Animations.meta
+
+New Unity Project/Assets/Animations/BoxCrashAC.controller
+
+New Unity Project/Assets/Animations/BoxCrashAC.controller.meta
+
+New Unity Project/Assets/Animations/BoxIdleAC.controller
+
+New Unity Project/Assets/Animations/BoxIdleAC.controller.meta
+
+New Unity Project/Assets/Animations/BoxOfPandora_Idle.anim
+
+New Unity Project/Assets/Animations/BoxOfPandora_Idle.anim.meta
+
+New Unity Project/Assets/Animations/ItemsAC.controller
+
+New Unity Project/Assets/Animations/ItemsAC.controller.meta
+
+New Unity Project/Assets/Meshes.meta
+
+New Unity Project/Assets/Meshes/bottle_blue.FBX
+
+New Unity Project/Assets/Meshes/bottle_blue.FBX.meta
+
+New Unity Project/Assets/Meshes/bottle_green.FBX
+
+New Unity Project/Assets/Meshes/bottle_green.FBX.meta
+
+New Unity Project/Assets/Meshes/bottle_red.FBX
+
+New Unity Project/Assets/Meshes/bottle_red.FBX.meta
+
+New Unity Project/Assets/Meshes/Box.FBX
+
+New Unity Project/Assets/Meshes/Box.FBX.meta
+
+New Unity Project/Assets/Meshes/Coin.FBX
+
+New Unity Project/Assets/Meshes/Coin.FBX.meta
+
+New Unity Project/Assets/Meshes/Fir_Tree.fbx
+
+New Unity Project/Assets/Meshes/Fir_Tree.fbx.meta
+
+New Unity Project/Assets/Meshes/Materials.meta
+
+New Unity Project/Assets/Meshes/Materials/Bottle_blue.mat
+
+New Unity Project/Assets/Meshes/Materials/Bottle_blue.mat.meta
+
+New Unity Project/Assets/Meshes/Materials/Bottle_green.mat
+
+New Unity Project/Assets/Meshes/Materials/Bottle_green.mat.meta
+
+New Unity Project/Assets/Meshes/Materials/Bottle_red.mat
+
+New Unity Project/Assets/Meshes/Materials/Bottle_red.mat.meta
+
+New Unity Project/Assets/Meshes/Materials/Box_Of_Pandora.mat
+
+New Unity Project/Assets/Meshes/Materials/Box_Of_Pandora.mat.meta
+
+New Unity Project/Assets/Meshes/Materials/Coin.mat
+
+New Unity Project/Assets/Meshes/Materials/Coin.mat.meta
+
+New Unity Project/Assets/Meshes/Materials/Dust_particles.mat
+
+New Unity Project/Assets/Meshes/Materials/Dust_particles.mat.meta
+
+New Unity Project/Assets/Meshes/Materials/Free_Tree.mat
+
+New Unity Project/Assets/Meshes/Materials/Free_Tree.mat.meta
+
+New Unity Project/Assets/Meshes/Materials/Glow_particles.mat
+
+New Unity Project/Assets/Meshes/Materials/Glow_particles.mat.meta
+
+New Unity Project/Assets/Meshes/Materials/No Name.mat
+
+New Unity Project/Assets/Meshes/Materials/No Name.mat.meta
+
+New Unity Project/Assets/Meshes/Materials/Stars_particles.mat
+
+New Unity Project/Assets/Meshes/Materials/Stars_particles.mat.meta
+
+New Unity Project/Assets/Meshes/Oak_Tree.fbx
+
+New Unity Project/Assets/Meshes/Oak_Tree.fbx.meta
+
+New Unity Project/Assets/Meshes/Palm_Tree.fbx
+
+New Unity Project/Assets/Meshes/Palm_Tree.fbx.meta
+
+New Unity Project/Assets/Meshes/Poplar_Tree.fbx
+
+New Unity Project/Assets/Meshes/Poplar_Tree.fbx.meta
+
+New Unity Project/Assets/Prefabs.meta
+
+New Unity Project/Assets/Prefabs/models.meta
+
+New Unity Project/Assets/Prefabs/models/Bottle_Endurance.prefab
+
+New Unity Project/Assets/Prefabs/models/Bottle_Endurance.prefab.meta
+
+New Unity Project/Assets/Prefabs/models/Bottle_Health.prefab
+
+New Unity Project/Assets/Prefabs/models/Bottle_Health.prefab.meta
+
+New Unity Project/Assets/Prefabs/models/Bottle_Mana.prefab
+
+New Unity Project/Assets/Prefabs/models/Bottle_Mana.prefab.meta
+
+New Unity Project/Assets/Prefabs/models/BoxOfPandora.prefab
+
+New Unity Project/Assets/Prefabs/models/BoxOfPandora.prefab.meta
+
+New Unity Project/Assets/Prefabs/models/Coin.prefab
+
+New Unity Project/Assets/Prefabs/models/Coin.prefab.meta
+
+New Unity Project/Assets/Prefabs/models/Fir_Tree.prefab
+
+New Unity Project/Assets/Prefabs/models/Fir_Tree.prefab.meta
+
+New Unity Project/Assets/Prefabs/models/Oak_Tree.prefab
+
+New Unity Project/Assets/Prefabs/models/Oak_Tree.prefab.meta
+
+New Unity Project/Assets/Prefabs/models/Palm_Tree.prefab
+
+New Unity Project/Assets/Prefabs/models/Palm_Tree.prefab.meta
+
+New Unity Project/Assets/Prefabs/models/Poplar_Tree.prefab
+
+New Unity Project/Assets/Prefabs/models/Poplar_Tree.prefab.meta
+
+New Unity Project/Assets/Scenes/SampleScene.unity
+
+New Unity Project/Assets/Textures.meta
+
+New Unity Project/Assets/Textures/Bottle_blue_diff.png
+
+New Unity Project/Assets/Textures/Bottle_blue_diff.png.meta
+
+New Unity Project/Assets/Textures/Bottle_green_diff.png
+
+New Unity Project/Assets/Textures/Bottle_green_diff.png.meta
+
+New Unity Project/Assets/Textures/Bottle_red_diff.png
+
+New Unity Project/Assets/Textures/Bottle_red_diff.png.meta
+
+New Unity Project/Assets/Textures/Bottles_normal.png
+
+New Unity Project/Assets/Textures/Bottles_normal.png.meta
+
+New Unity Project/Assets/Textures/Bottles_spec.png
+
+New Unity Project/Assets/Textures/Bottles_spec.png.meta
+
+New Unity Project/Assets/Textures/BoxOfPandora_diffuse.png
+
+New Unity Project/Assets/Textures/BoxOfPandora_diffuse.png.meta
+
+New Unity Project/Assets/Textures/Coin_diffuse.png
+
+New Unity Project/Assets/Textures/Coin_diffuse.png.meta
+
+New Unity Project/Assets/Textures/Coin_normals.png
+
+New Unity Project/Assets/Textures/Coin_normals.png.meta
+
+New Unity Project/Assets/Textures/Dust_particles.tif
+
+New Unity Project/Assets/Textures/Dust_particles.tif.meta
+
+New Unity Project/Assets/Textures/sprite_radiance.tif
+
+New Unity Project/Assets/Textures/sprite_radiance.tif.meta
+
+New Unity Project/Assets/Textures/star.png
+
+New Unity Project/Assets/Textures/star.png.meta
+
+New Unity Project/Assets/Textures/tree_diffuse.png
+
+New Unity Project/Assets/Textures/tree_diffuse.png.meta
