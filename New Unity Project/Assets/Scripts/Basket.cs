@@ -7,10 +7,12 @@ public class Basket : MonoBehaviour
     public event Action<Item> catchItem;
     [SerializeField] private string _treeTag;
     [SerializeField] private Stats _uIStats;
+    [SerializeField] private AudioSource _audio;
     public Stats GetStats()
         => _uIStats;
     private void Update()
     {
+        _audio = GetComponent<AudioSource>();
         var mousePos2D = Input.mousePosition;
         mousePos2D.z = -Camera.main.transform.position.z;
         var mousePos3D = Camera.main.ScreenToWorldPoint(mousePos2D);
@@ -26,7 +28,7 @@ public class Basket : MonoBehaviour
         }
         if (item is BlueBottle)
         {
-            _uIStats.ScorePerItem++;
+            _uIStats.scorePerItem += 2;
         }
         Destroy(item.gameObject);
 
@@ -38,6 +40,7 @@ public class Basket : MonoBehaviour
         {
             return;
         }
+        _audio.Play();
         catchItem?.Invoke(collItem);
         UseItem(collItem);
     }

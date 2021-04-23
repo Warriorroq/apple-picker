@@ -15,8 +15,10 @@ public class FlyingTree : MonoBehaviour
     [SerializeField] private GameObject _blueBottlePrefab;
     [SerializeField] private GameObject _redBottlePrefab;
     [SerializeField] private Basket _basket;
+    [SerializeField] private AudioSource _audio;
     private void Start()
     {
+        _audio = GetComponent<AudioSource>();
         _basket.catchItem += UseItem;
         InvokeRepeating(nameof(DropItem), _secondsBetweenAppleDrops, _secondsBetweenAppleDrops);
         InvokeRepeating(nameof(ChangeDirection), _updateTimeToChangeDirections, _updateTimeToChangeDirections);
@@ -52,7 +54,7 @@ public class FlyingTree : MonoBehaviour
         }
         else if(item is BlueBottle)
         {
-            _secondsBetweenAppleDrops = Random.Range(0.1f, 1.2f);
+            _secondsBetweenAppleDrops = Random.Range(0.4f, 1.2f);
         }
         else if(item is GreenBottle)
         {
@@ -72,6 +74,7 @@ public class FlyingTree : MonoBehaviour
     }
     private void DropItem()
     {
+        _audio.Play();
         var chance = Random.Range(0f, 1f);
         if (chance > 0.1f)
         {
