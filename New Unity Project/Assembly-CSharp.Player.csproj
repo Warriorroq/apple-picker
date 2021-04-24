@@ -62,8 +62,10 @@
     <Compile Include="Assets\Scripts\items\BlueBottle.cs" />
     <Compile Include="Assets\Scripts\Stats.cs" />
     <Compile Include="Assets\Scripts\items\Item.cs" />
-    <Compile Include="Assets\Scripts\FlyingTree.cs" />
+    <Compile Include="Assets\Scripts\TreeClasses\FlyingTree.cs" />
     <Compile Include="Assets\Scripts\TextValue.cs" />
+    <Compile Include="Assets\Scripts\TreeClasses\ItemDropAbility.cs" />
+    <Compile Include="Assets\Scripts\TreeClasses\TreeMOvement.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

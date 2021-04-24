@@ -20,12 +20,13 @@ public class Stats : MonoBehaviour
         }
     }
     public int scorePerItem = 10;
-    [SerializeField] private Basket _basket;
-    [SerializeField] private decimal _lastScore = 0;
-    [SerializeField] private decimal _score = 0;
+
     [SerializeField] private TextValue _scoreText;
     [SerializeField] private TextValue _hpText;
     [SerializeField] private AudioSource _audio;
+    [SerializeField] private Basket _basket;
+    [SerializeField] private decimal _lastScore = 0;
+    [SerializeField] private decimal _score = 0;
     [SerializeField] private decimal _hp = 5;
 
     void Start()

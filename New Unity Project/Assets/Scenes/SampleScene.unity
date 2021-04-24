@@ -285,6 +285,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &373195915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373195913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bce3013661e38ea48aa5e5fd56f52d40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _applePrefab: {fileID: 6207443653440858460, guid: 4cf5cff07f2f6b34ab0ffa203e0ccb00, type: 3}
+  _greenBottlePrefab: {fileID: 1626743075503626807, guid: df3e97ef1ed0731489e0a08bded0fbde, type: 3}
+  _blueBottlePrefab: {fileID: 3929298923683015402, guid: 1532734d6acea4b4585330c8da368225, type: 3}
+  _redBottlePrefab: {fileID: 2246143501366538387, guid: 6eed5cc0f894c2345922d2b2c84f10ae, type: 3}
+--- !u!114 &373195916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373195913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de795c4f4d14ecc49a9721f3396895f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  _additionalSpeedPerItem: 0.1
+  _chanceToChangeDirections: 0.1
+  _leftAndRightEdge: 10
+  _updateTimeToChangeDirections: 0.1
 --- !u!114 &373195917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,16 +330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c556cb75315047aca1b3e67bbaae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
-  _additionalSpeedPerItem: 0.1
-  _leftAndRightEdge: 1
-  _chanceToChangeDirections: 0.1
-  _updateTimeToChangeDirections: 0.1
   _secondsBetweenAppleDrops: 0.7
-  _applePrefab: {fileID: 6207443653440858460, guid: 4cf5cff07f2f6b34ab0ffa203e0ccb00, type: 3}
-  _greenBottlePrefab: {fileID: 1626743075503626807, guid: df3e97ef1ed0731489e0a08bded0fbde, type: 3}
-  _blueBottlePrefab: {fileID: 3929298923683015402, guid: 1532734d6acea4b4585330c8da368225, type: 3}
-  _redBottlePrefab: {fileID: 2246143501366538387, guid: 6eed5cc0f894c2345922d2b2c84f10ae, type: 3}
+  _itemDrop: {fileID: 373195915}
+  _treeMovement: {fileID: 373195916}
   _basket: {fileID: 1174746637}
   _audio: {fileID: 373195914}
 --- !u!1 &602098014
@@ -424,11 +450,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14fe0ec6841829048a5c33688672fffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePerItem: 10
-  _basket: {fileID: 1174746637}
+  scorePerItem: 1
   _scoreText: {fileID: 714057014}
   _hpText: {fileID: 716675963}
   _audio: {fileID: 602098020}
+  _basket: {fileID: 1174746637}
 --- !u!82 &602098020
 AudioSource:
   m_ObjectHideFlags: 0
@@ -969,10 +995,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scorePerItem: 10
-  _basket: {fileID: 1174746637}
   _scoreText: {fileID: 714057014}
   _hpText: {fileID: 0}
   _audio: {fileID: 0}
+  _basket: {fileID: 1174746637}
 --- !u!1001 &1174746635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1053,7 +1079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _treeTag: tree
   _uIStats: {fileID: 602098019}
-  _audio: {fileID: 0}
+  _audio: {fileID: 1174746639}
 --- !u!65 &1174746638
 BoxCollider:
   m_ObjectHideFlags: 0
