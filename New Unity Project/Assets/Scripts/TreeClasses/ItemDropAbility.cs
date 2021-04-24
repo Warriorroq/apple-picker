@@ -8,33 +8,32 @@ public class ItemDropAbility : MonoBehaviour
     [SerializeField] private GameObject _greenBottlePrefab;
     [SerializeField] private GameObject _blueBottlePrefab;
     [SerializeField] private GameObject _redBottlePrefab;
-    public void DropItem()
+    public GameObject DropItem()
     {
         var chance = Random.Range(0f, 1f);
+        GameObject item;
         if (chance > 0.1f)
         {
-            Instantiate(_applePrefab, transform.position, Quaternion.identity);
+            item = Instantiate(_applePrefab, transform.position, Quaternion.identity);
         }
         else
         {
-            DropBottle(Random.Range(0, 3));
+            item = DropBottle(Random.Range(0, 3));
         }
+        return item;
     }
-    private void DropBottle(int type)
+    private GameObject DropBottle(int type)
     {
         switch (type)
         {
             case 0:
-                Instantiate(_greenBottlePrefab, transform.position, Quaternion.identity);
-                return;
+                return Instantiate(_greenBottlePrefab, transform.position, Quaternion.identity);
             case 1:
-                Instantiate(_blueBottlePrefab, transform.position, Quaternion.identity);
-                return;
+                return Instantiate(_blueBottlePrefab, transform.position, Quaternion.identity);
             case 2:
-                Instantiate(_redBottlePrefab, transform.position, Quaternion.identity);
-                return;
+                return Instantiate(_redBottlePrefab, transform.position, Quaternion.identity);
             default:
-                return;
+                return null;
         }
     }
 }

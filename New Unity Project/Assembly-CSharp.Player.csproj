@@ -65,7 +65,8 @@
     <Compile Include="Assets\Scripts\TreeClasses\FlyingTree.cs" />
     <Compile Include="Assets\Scripts\TextValue.cs" />
     <Compile Include="Assets\Scripts\TreeClasses\ItemDropAbility.cs" />
-    <Compile Include="Assets\Scripts\TreeClasses\TreeMOvement.cs" />
+    <Compile Include="Assets\Scripts\TreeClasses\TreeMovement.cs" />
+    <Compile Include="Assets\Scripts\AudioHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -10,7 +10,7 @@ public class TextValue : MonoBehaviour
     {
         _text = GetComponent<Text>();
     }
-    public void UpdateText(decimal value)
+    public void UpdateText(int value)
     {
         _text.text = $"{_valueName}: {value}";
     }

@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Stats : MonoBehaviour
 {
-    public decimal Hp
+    public int Hp
     {
         get => _hp;
         set
@@ -16,23 +17,24 @@ public class Stats : MonoBehaviour
             }
 
             _hp = value;
-            _hpText.UpdateText(_hp);
+            hpChange?.Invoke(_hp);
         }
     }
     public int scorePerItem = 10;
+    public event Action<int> hpChange;
+    public event Action<int> scoreResult;
 
     [SerializeField] private TextValue _scoreText;
     [SerializeField] private TextValue _hpText;
-    [SerializeField] private AudioSource _audio;
     [SerializeField] private Basket _basket;
-    [SerializeField] private decimal _lastScore = 0;
-    [SerializeField] private decimal _score = 0;
-    [SerializeField] private decimal _hp = 5;
+    [SerializeField] private int _lastScore = 0;
+    [SerializeField] private int _score = 0;
+    [SerializeField] private int _hp = 5;
 
     void Start()
     {
-        _audio = GetComponent<AudioSource>();
         _basket.catchItem += CountItem;
+        hpChange += _hpText.UpdateText;
     }
     private void CountItem(Item item)
     {
@@ -40,7 +42,7 @@ public class Stats : MonoBehaviour
         if (_score - _lastScore == 100)
         {
             _lastScore = _score;
-            _audio.Play();
+            scoreResult?.Invoke(_score);
         }
         _scoreText.UpdateText(_score);
     }
