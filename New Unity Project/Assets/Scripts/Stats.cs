@@ -35,6 +35,7 @@ public class Stats : MonoBehaviour
     {
         _basket.catchItem += CountItem;
         hpChange += _hpText.UpdateText;
+        scoreResult += _scoreText.UpdateText;
     }
     private void CountItem(Item item)
     {

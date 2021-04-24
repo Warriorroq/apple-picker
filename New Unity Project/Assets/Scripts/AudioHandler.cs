@@ -5,11 +5,10 @@ using UnityEngine;
 
 public class AudioHandler : MonoBehaviour
 {
-    [SerializeField] private AudioClip _resultScore;
-    [SerializeField] private AudioClip _createItem;
-    [SerializeField] private AudioClip _hpSound;
-    [SerializeField] private AudioClip _takeItem;
-    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioSource _audioSourceResult;
+    [SerializeField] private AudioSource _audioSourceHp;
+    [SerializeField] private AudioSource _audioSourceItem;
+    [SerializeField] private AudioSource _audioSourceBasket;
     [SerializeField] private Basket _basket;
     [SerializeField] private FlyingTree _tree;
     [SerializeField] private Stats _stats;
@@ -23,26 +22,25 @@ public class AudioHandler : MonoBehaviour
 
     private void ScoreResultSound(int obj)
     {
-        PlaySound(_resultScore);
+        PlaySound(_audioSourceResult);
     }
 
     private void HpSound(int obj)
     {
-        PlaySound(_hpSound);
+        PlaySound(_audioSourceHp);
     }
 
     private void CreateItemSound(GameObject obj)
     {
-        PlaySound(_createItem);
+        PlaySound(_audioSourceItem);
     }
 
     private void CatchSound(Item obj)
     {
-        PlaySound(_takeItem);
+        PlaySound(_audioSourceBasket);
     }
-    private void PlaySound(AudioClip clip)
+    private void PlaySound(AudioSource source)
     {
-        _audioSource.clip = clip;
-        _audioSource.Play();
+        source.Play();
     }
 }
